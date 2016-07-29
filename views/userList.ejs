@@ -1,0 +1,13 @@
+<h1>User list page</h1>
+<hr/>
+<ul>
+   <li><a href="/user/index">首頁</a></li>
+   <li><a href="/user/page">新增</a></li>
+</ul>
+<ul>
+ <%for(var i=0; i<users.length;i++){%>
+     <li><%= users[i].name %>
+     <a href ="/user/destroy/<%=users[i].id%>">刪除</a>
+     </li>
+    <% } %> 
+</ul>
